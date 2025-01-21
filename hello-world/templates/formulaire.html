@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE</title>
+</head>
+<h2>Formulaire à remplir :</h2>
+<body>
+    <form action="/formulaire", method="post">
+        <input type="text" name="texte" id="texte">
+        <button type="submit">Envoyer</button>
+    </form>
+    <br>
+    <h2>Affichage du texte :</h2>
+    {%if texte%}
+    <p>{{texte}}</p>
+    {%else%}
+    <p>rien</p>
+    {%endif%}
+</body>
+</html>
